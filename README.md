@@ -10,16 +10,31 @@ An interactive, visual explorer for the classic **N-Queens problem** — place _
 
 ## Table of Contents
 
-- [Features](#features)
-- [Demo](#demo)
-- [How It Works](#how-it-works)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Algorithm Details](#algorithm-details)
-- [Color Legend](#color-legend)
-- [Configuration](#configuration)
-- [License](#license)
+- [♛ N-Queens Solver](#-n-queens-solver)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Demo](#demo)
+  - [How It Works](#how-it-works)
+  - [Project Structure](#project-structure)
+    - [`n_queen_dp.py`](#n_queen_dppy)
+    - [`app.py`](#apppy)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+    - [Interactive Web UI (Gradio)](#interactive-web-ui-gradio)
+    - [Command-Line Solver](#command-line-solver)
+  - [Algorithm Details](#algorithm-details)
+    - [State Representation](#state-representation)
+    - [Core Logic](#core-logic)
+    - [Complexity](#complexity)
+    - [Known Solution Counts](#known-solution-counts)
+  - [Color Legend](#color-legend)
+  - [Configuration](#configuration)
+    - [Changing Board Size Range](#changing-board-size-range)
+    - [Changing Colors](#changing-colors)
+    - [Server Settings](#server-settings)
+  - [License](#license)
 
 ---
 
@@ -37,6 +52,8 @@ An interactive, visual explorer for the classic **N-Queens problem** — place _
 ---
 
 ## Demo
+
+![Gradio Layout](Gradio_Layout.png)
 
 | Full Solution | Attack Visualization | Step-by-Step |
 |:---:|:---:|:---:|
@@ -95,6 +112,8 @@ Contains the Gradio-based interactive UI:
 
 - **Python 3.10+**
 - [uv](https://github.com/astral-sh/uv) (recommended) or `pip`
+
+**Dependencies:** `gradio`, `matplotlib` (see `requirements.txt`)
 
 ### Installation
 

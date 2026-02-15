@@ -6,13 +6,12 @@ using the bitmask DP solver.
 """
 
 import time
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
 import gradio as gr
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-import numpy as np
 
 from n_queen_dp import solve_n_queens
 
